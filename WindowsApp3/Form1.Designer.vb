@@ -36,6 +36,7 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -157,11 +158,21 @@ Partial Class Form1
         Me.Label1.TabIndex = 11
         Me.Label1.Text = "Version 1.1 Dev"
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(713, 289)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "???"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 316)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -197,4 +208,5 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button6 As Button
 End Class
