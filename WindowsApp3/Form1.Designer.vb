@@ -34,6 +34,8 @@ Partial Class Form1
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -137,11 +139,31 @@ Partial Class Form1
         Me.Button4.Text = "Validate"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(359, 5)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 10
+        Me.Button5.Text = "Other Form"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 294)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(83, 13)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Version 1.1 Dev"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 316)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
@@ -173,4 +195,6 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Label1 As Label
 End Class

@@ -44,4 +44,8 @@
         MsgBox("Welcome, to my First Ever Coding Experience!", MsgBoxStyle.Information)
         MsgBox("Warning! there might be Bugs!", MsgBoxStyle.Exclamation)
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Form2.Show()
+    End Sub
 End Class
