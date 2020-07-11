@@ -52,12 +52,9 @@
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         If CheckBox2.Checked = True Then
             Form3.Show()
-            MsgBox("Well Done!", MsgBoxStyle.OkCancel,)
+            MsgBox("Well Done!", MsgBoxStyle.OkCancel)
             If MsgBoxResult.Ok Then
                 MsgBox("Im Also Ok")
-                If MsgBoxResult.Cancel Then
-                    MsgBox("Why did you cancel?")
-                End If
             End If
         End If
     End Sub

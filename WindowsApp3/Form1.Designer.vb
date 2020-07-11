@@ -156,7 +156,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 13)
         Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Version 1.1 Dev"
+        Me.Label1.Text = "Version 1.2 Dev"
         '
         'Button6
         '
