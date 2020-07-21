@@ -58,4 +58,7 @@
             End If
         End If
     End Sub
-End Class
+
+    Private Sub CheckBox1_DoubleClick(sender As Object, e As EventArgs) Handles CheckBox1.DoubleClick
+        MsgBox("You clicked too fast on that one sir", MsgBoxStyle.Exclamation)
+    End Sub
