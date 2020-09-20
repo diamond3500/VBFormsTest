@@ -5,7 +5,6 @@
 
     Private Sub NewMethod()
         ToolStripProgressBar1.Increment(1)
-        MsgBox("Successfully Incremented")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -65,5 +64,13 @@
 
     Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         MsgBox("Program Exited", MsgBoxStyle.Exclamation)
+    End Sub
+
+    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        Form4.Visible = True
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        ToolStripProgressBar1.Increment(5)
     End Sub
 End Class
