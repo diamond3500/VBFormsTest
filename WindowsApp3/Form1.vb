@@ -9,10 +9,9 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If String.IsNullOrEmpty(TextBox1.Text) Then
-            MsgBox("Nothing has been written in the TextBox")
+            MsgBox("Nothing was written inside the TextBox", MsgBoxStyle.Exclamation)
         Else
-            MsgBox("You wrote something inside the TextBox", MsgBoxStyle.OkCancel, MsgBoxStyle.Information)
-            Beep()
+            MsgBox(TextBox1.Text)
         End If
     End Sub
 
@@ -28,11 +27,9 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         If CheckBox1.Checked = True Then
             MsgBox("You Checked Number 1", MsgBoxStyle.Information)
-        Else
         End If
         If CheckBox2.Checked = True Then
             MsgBox("You Checked Number 2", MsgBoxStyle.Information)
-        Else
         End If
         If CheckBox3.Checked = True Then
             MsgBox("You Checked Number 3", MsgBoxStyle.Information)
@@ -59,7 +56,7 @@
     End Sub
 
     Private Sub CheckBox1_DoubleClick(sender As Object, e As EventArgs) Handles CheckBox1.DoubleClick
-        MsgBox("You clicked too fast on that one sir", MsgBoxStyle.Exclamation)
+        MsgBox("You clicked too fast on that one", MsgBoxStyle.Exclamation)
     End Sub
 
     Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
@@ -72,5 +69,9 @@
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         ToolStripProgressBar1.Increment(5)
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Label2.Text = Val(Label2.Text) + 1
     End Sub
 End Class
