@@ -5,15 +5,13 @@
 
     Private Sub NewMethod()
         ToolStripProgressBar1.Increment(1)
-        MsgBox("Successfully Incremented")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If String.IsNullOrEmpty(TextBox1.Text) Then
-            MsgBox("Nothing has been written in the TextBox")
+            MsgBox("Nothing was written inside the TextBox", MsgBoxStyle.Exclamation)
         Else
-            MsgBox("You wrote something inside the TextBox", MsgBoxStyle.OkCancel, MsgBoxStyle.Information)
-            Beep()
+            MsgBox(TextBox1.Text)
         End If
     End Sub
 
@@ -29,11 +27,9 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         If CheckBox1.Checked = True Then
             MsgBox("You Checked Number 1", MsgBoxStyle.Information)
-        Else
         End If
         If CheckBox2.Checked = True Then
             MsgBox("You Checked Number 2", MsgBoxStyle.Information)
-        Else
         End If
         If CheckBox3.Checked = True Then
             MsgBox("You Checked Number 3", MsgBoxStyle.Information)
@@ -43,5 +39,39 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MsgBox("Welcome, to my First Ever Coding Experience!", MsgBoxStyle.Information)
         MsgBox("Warning! there might be Bugs!", MsgBoxStyle.Exclamation)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If CheckBox2.Checked = True Then
+            Form3.Show()
+            MsgBox("Well Done!", MsgBoxStyle.OkCancel)
+            If MsgBoxResult.Ok Then
+                MsgBox("Im Also Ok")
+            End If
+        End If
+    End Sub
+
+    Private Sub CheckBox1_DoubleClick(sender As Object, e As EventArgs) Handles CheckBox1.DoubleClick
+        MsgBox("You clicked too fast on that one", MsgBoxStyle.Exclamation)
+    End Sub
+
+    Private Sub Form1_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        MsgBox("Program Exited", MsgBoxStyle.Exclamation)
+    End Sub
+
+    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        Form4.Visible = True
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        ToolStripProgressBar1.Increment(5)
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Label2.Text = Val(Label2.Text) + 1
     End Sub
 End Class
